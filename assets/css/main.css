@@ -10,20 +10,13 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #c81e2c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #011E60; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #312f2f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
-  --nav-hover-color: #c81e2c; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #c81e2c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -68,7 +61,7 @@ a:hover {
 h1,
 h2,
 h3,
-h4,
+
 h5,
 h6 {
   color: var(--heading-color);
@@ -717,7 +710,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color:white;
   line-height: 0;
 }
 
@@ -1058,36 +1051,6 @@ section,
 }
 
 
-
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 10px;
-}
-
-.stats .stats-item i {
-  font-size: 44px;
-  color: var(--accent-color);
-  line-height: 0;
-  margin-right: 15px;
-}
-
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 40px;
-  display: block;
-  font-weight: 700;
-  line-height: 40px;
-}
-
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0;
-  font-family: var(--heading-font);
-  font-size: 14px;
-}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1169,27 +1132,25 @@ section,
 
 .btn-register {
   display: inline-block;
-  background: linear-gradient(135deg, #c81e2c, #e23b4b);
-  color: #fff;
+  background: linear-gradient(135deg, #011E60, #0a2fa3);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   padding: 14px 36px;
   border-radius: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(200, 30, 44, 0.3);
+  box-shadow: 0 4px 12px rgba(1, 30, 96, 0.35);
   transition: all 0.3s ease;
   text-align: center;
 }
 
-
 .btn-register:hover {
-  background: linear-gradient(135deg, #e23b4b, #c81e2c);
+  background: linear-gradient(135deg, #0a2fa3, #011E60);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(200, 30, 44, 0.45);
-  color: #fff;
+  box-shadow: 0 6px 18px rgba(1, 30, 96, 0.5);
+  color: #ffffff;
 }
-
 /* Section Wrapper */
 .two-images-section {
   text-align: center;
@@ -1275,22 +1236,23 @@ section,
 
 /* Submit Button */
 .custom-register-form .btn-register {
-  margin-top: 10%;
-  background: linear-gradient(135deg, #c81e2c, #e23b4b);
-  color: #fff;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #011E60, #0a2fa3);
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 14px 40px;
   border: none;
   border-radius: 50px;
-  margin-top: 20px;
   transition: 0.3s;
   width: 100%;
+  box-shadow: 0 6px 18px rgba(1, 30, 96, 0.35);
 }
 
 .custom-register-form .btn-register:hover {
-  background: linear-gradient(135deg, #e23b4b, #c81e2c);
+  background: linear-gradient(135deg, #0a2fa3, #011E60);
   transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(1, 30, 96, 0.5);
 }
 
 /* Form Title */
@@ -1401,45 +1363,253 @@ section,
 }
 
 
-
-
 .btn-register-out-side {
   display: inline-block;
-  background: linear-gradient(135deg, #c81e2c, #e23b4b);
-  color: #fff;
+  background: linear-gradient(135deg, #e6e9f2, #f5f7fb);
+  color: #011E60;
   font-size: 16px;
   font-weight: 600;
   padding: 14px 36px;
   border-radius: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(200, 30, 44, 0.3);
+  box-shadow: 0 4px 12px rgba(1, 30, 96, 0.15);
   transition: all 0.3s ease;
   text-align: center;
+  border: 1px solid rgba(1, 30, 96, 0.15);
 }
-
 
 .btn-register-out-side:hover {
-  background: linear-gradient(135deg, #e23b4b, #c81e2c);
+  background: linear-gradient(135deg, #011E60, #0a2fa3);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(200, 30, 44, 0.45);
-  color: #fff;
+  box-shadow: 0 6px 18px rgba(1, 30, 96, 0.4);
+  color: #ffffff;
 }
 .custom-register-form .btn-register-out-side {
-  margin-top: 10%;
-  background: linear-gradient(135deg, #c81e2c, #e23b4b);
-  color: #fff;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #011E60, #0a2fa3);
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 14px 40px;
   border: none;
   border-radius: 50px;
-  margin-top: 20px;
   transition: 0.3s;
   width: 100%;
+  box-shadow: 0 4px 14px rgba(1, 30, 96, 0.35);
 }
 
 .custom-register-form .btn-register-out-side:hover {
-  background: linear-gradient(135deg, #e23b4b, #c81e2c);
+  background: linear-gradient(135deg, #0a2fa3, #011E60);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 30, 96, 0.5);
 }
+.projects .project-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(1, 30, 96, 0.15);
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(1, 30, 96, 0.25);
+}
+
+.projects .project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 22px;
+  text-align: right;
+}
+
+.project-content h3 {
+  color: #011E60;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.project-content .location {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+.project-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+  margin: 8px 0 12px;
+}
+
+
+.project-content .features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.project-content .features li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  position: relative;
+  padding-right: 18px;
+}
+
+.project-content .features li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #011E60;
+  font-weight: bold;
+}
+/* New Launch Special Section */
+.new-launch-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #010b26, #011E60);
+  color: #ffffff;
+}
+
+.launch-tag {
+  display: inline-block;
+  background: #ffffff;
+  color: #011E60;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.new-launch-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.new-launch-section h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.launch-desc {
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.launch-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.launch-features li {
+  margin-bottom: 8px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.launch-features li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #ffd15c;
+  font-weight: bold;
+}
+
+.launch-units {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.launch-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.launch-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .new-launch-section {
+    text-align: center;
+  }
+
+  .launch-features li {
+    padding-right: 0;
+  }
+}
+
+
+
+
+/* Mini Lavista Locations */
+.lavista-mini-locations {
+  padding: 25px 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.lavista-mini-locations h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #011E60;
+  margin-bottom: 5px;
+}
+
+.lavista-mini-locations p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.locations-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Normal locations */
+.locations-list span {
+  background: #f5f7fb;
+  color: #011E60;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* NEW Launch Highlight */
+.locations-list .location-new {
+  background: linear-gradient(135deg, #011E60, #0a2fa3);
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+}
+
+.locations-list .location-new small {
+  background: #ffd15c;
+  color: #011E60;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
