@@ -26,7 +26,6 @@ async function handleSubmit(e, sheet) {
   const form = e.target; // The form element
   const name = form.name.value.trim(); // Assuming your input has name="name"
   const phone = form.phone.value.trim(); // Assuming your input has name="phone"
-  const email = form.email.value.trim(); // Assuming your input has name="phone"
 
   if (form.project) {
       const project = form.project.value.trim(); // Assuming your input has name="phone"
@@ -37,7 +36,7 @@ async function handleSubmit(e, sheet) {
       }
   }else
   // // Validate inputs
-  if (!name || !phone  || !email) {
+  if (!name || !phone  ) {
     showAlert("الرجاء إدخال الاسم ورقم الهاتف و البريد الالكتروني.", "warning");
     return;
   }
@@ -48,7 +47,7 @@ async function handleSubmit(e, sheet) {
   progressContainer.classList.remove("d-none");
 
   try {
-    const response = await fetch('../../submit-sheet.php', {
+    const response = await fetch('./submit-sheet.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -56,7 +55,6 @@ async function handleSubmit(e, sheet) {
       body: new URLSearchParams({
         name: name,
         phone: phone,
-        email: email,
         compound: sheet
       })
     });
@@ -65,9 +63,8 @@ async function handleSubmit(e, sheet) {
     if (result.success) {
       name.value = "";
       phone.value = "";
-      email.value = "";
 
-        window.location.href = 'thank_you.html';
+        window.location.href = './thank_you.html';
 
     } else {
       throw new Error(result.error || "Submission failed");
