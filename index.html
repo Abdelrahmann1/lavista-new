@@ -40,7 +40,7 @@
 
       
 
-      <a class="btn-getstarted" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> سجّل الآن </a>
+      <a class="btn-getstarted" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > سجّل الآن </a>
 
 
     </div>
@@ -72,7 +72,7 @@
           <br>
           <div class="">
 
-            <a href="#register" class="btn-register-out-side " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <i
+            <a href="#register" class="btn-register-out-side " data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <i
                 class="bi bi-person-check"></i> سجّل الآن  </a>
           </div>
         </div>
@@ -155,7 +155,7 @@
         <a href="#"
            class="btn-register"
            data-bs-toggle="modal"
-           data-bs-target="#staticBackdrop">
+           data-bs-target="#staticBackdrop" onclick="setProject('LA Vista El Patio Riva In House')"  >
           سجّل بياناتك الآن
         </a>
       </div>
@@ -216,7 +216,7 @@
             </ul>
             <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Patio Vida In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -259,7 +259,7 @@
 
            <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Patio Hills In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -304,7 +304,7 @@
 
            <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Patio City In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -348,7 +348,7 @@
 
             <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('Lavista El patio town new Cairo In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -401,7 +401,7 @@
 
            <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Gardens In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -436,7 +436,7 @@
 
            <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Ray In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -485,7 +485,7 @@
 
             <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Bay East In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -517,7 +517,7 @@
                         </ul>
  <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Ras El Hekma In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -568,7 +568,7 @@
 
            <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('El Patio Sola In House')">
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -619,7 +619,7 @@
 
             <div class="btn-div">
               <a href="#" class="btn-register"
-                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="setProject('LA Vista Patio Vera In House')" >
                 سجّل بياناتك الآن
               </a>
             </div>
@@ -733,7 +733,7 @@
   
           <div class="col-lg-20">
             
-            <form onsubmit="handleSubmit(event, 'HaziMisr All In House')" class="custom-register-form" data-aos="fade-up" data-aos-delay="200">
+            <form onsubmit="handleSubmit(event, currentProject)" class="custom-register-form" data-aos="fade-up" data-aos-delay="200">
 
   
                 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -774,12 +774,18 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
+<script>
+  let currentProject = 'Lavista All In House';
+  function setProject(projectName) {
+    currentProject = projectName;
+  }
+</script>
 
   <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="./main.js"></script>
 
 </body>
 

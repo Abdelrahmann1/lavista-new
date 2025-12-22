@@ -27,14 +27,6 @@ async function handleSubmit(e, sheet) {
   const name = form.name.value.trim(); // Assuming your input has name="name"
   const phone = form.phone.value.trim(); // Assuming your input has name="phone"
 
-  if (form.project) {
-      const project = form.project.value.trim(); // Assuming your input has name="phone"
-      if (project != "none") {
-          sheet = project;
-      }else{
-          console.log("none");
-      }
-  }else
   // // Validate inputs
   if (!name || !phone  ) {
     showAlert("الرجاء إدخال الاسم ورقم الهاتف و البريد الالكتروني.", "warning");
