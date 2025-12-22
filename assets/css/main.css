@@ -1201,6 +1201,16 @@ section,
 
 /* Mobile: stack images */
 @media (max-width: 768px) {
+  section, .section{
+    padding-bottom: 20px;
+
+  }
+  .section-title {
+    padding-bottom: 20px;
+  }
+  .margin-mob-5{
+    margin-bottom: 25px;
+  }
   .two-images {
     flex-direction: column;
     gap: 15px;
@@ -1233,9 +1243,20 @@ section,
   box-shadow: 0 0 8px rgba(49,53,61,0.2);
   outline: none;
 }
-
+.projects .row{
+  display: flex;
+  justify-content: space-around;
+}
 /* Submit Button */
+.btn-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .custom-register-form .btn-register {
+
   margin-top: 20px;
   background: linear-gradient(135deg, #011E60, #0a2fa3);
   color: #ffffff;
@@ -1425,6 +1446,7 @@ section,
 }
 
 .project-content {
+  height: 100%;
   padding: 22px;
   text-align: right;
 }
